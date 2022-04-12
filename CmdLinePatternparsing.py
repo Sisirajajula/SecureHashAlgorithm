@@ -41,7 +41,7 @@ args_pattern = re.compile(
 )
 # To handle arguments are needed to be in the form of a string.
 
-arg_line = "--separator  2 3 4"
+arg_line = " ".join(sys.argv[1:])
 print(arg_line)
 def parse(arg_line: str) -> Dict[str, str]:
     args: Dict[str, str] = {}
